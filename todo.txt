@@ -1,0 +1,13 @@
+in own json config check which days to charge and to what limit
+granular control of time
+shutdown g-helper, change the config and start it again
+
+only elevate privilege at a later stage
+
+check if "%APPDATA\\ChangeChargeLimitPy" is there or not
+    check if the config file is there or not
+        if it isn't then create a basic config file with basic values
+            in the config file check if the days and time are correct
+            use 24 hr clock
+
+url: https://github.com/seerge/g-helper/issues/1549
