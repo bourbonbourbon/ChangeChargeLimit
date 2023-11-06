@@ -20,13 +20,13 @@ def get_config(type):
     else:
         loc = gh_loc
 
-    if directory_check(loc) == False:
+    if isdir(loc) == False:
         print(
             f"Config directory for this program does not exist at {loc}.")
         print("Creating directory...")
         makedirs(loc)
 
-    if file_check(f"{loc}\\config.json") == False:
+    if exists(f"{loc}\\config.json") == False:
         print(
             f"Config file from this program does not exist at {loc}\\config.json.")
         print("Creating file...")
@@ -64,18 +64,6 @@ def check_dupli_day(schedule):
             week.append(day)
         else:
             return True
-    return False
-
-
-def directory_check(location):
-    if isdir(location):
-        return True
-    return False
-
-
-def file_check(location):
-    if exists(location):
-        return True
     return False
 
 
