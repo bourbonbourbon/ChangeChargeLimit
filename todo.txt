@@ -1,13 +1,27 @@
-in own json config check which days to charge and to what limit
-granular control of time
 shutdown g-helper, change the config and start it again
 
 only elevate privilege at a later stage
 
 check if "%APPDATA\\ChangeChargeLimitPy" is there or not
+    if it isn't then create the folder
     check if the config file is there or not
         if it isn't then create a basic config file with basic values
             in the config file check if the days and time are correct
             use 24 hr clock
+
+create an elevated process which has the code to elevated/create process to restart g-helper and  and an unelevated process which has the code for getting and setting the config files
+
+always run the process on system startup
+
+create executable using github actions, turn on security checks as well
+
+add a  disclaimer to the project stating that it is their responsibility running this code and that I take none of it if it ends up breaking their system etc.
+
+config_creator_helper.py
+    cli tool to create the config file and save it as well
+    and print the existing config as well
+    edit, delete, add
+
+in readme create basic config.json structure
 
 url: https://github.com/seerge/g-helper/issues/1549
