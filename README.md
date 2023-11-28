@@ -101,7 +101,9 @@ The `ChangeChargeLimit` script reads the `config.json` file in the "ChangeCharge
 7. **Save and Exit**:
    - Click "OK" or "Save" to create the task with the specified settings.
 
-8. Run the task once manually by right clicking on the newly created task and then clicking on "Run". Then click "Refresh" in the "Actions" panel on the right hand side.
+8. Now right click on `main.pyw` and choose `Open With`, then locate and select `pythonw.exe` (it should be wherever the python executable is).
+
+9. Run the task once manually by right clicking on the newly created task and then clicking on "Run". Then click "Refresh" in the "Actions" panel on the right hand side.
 
 With these configurations, the task will run the `main.py` script from your local Git repository every hour after a user logs on, ensuring that it has administrator privileges and handling task failures gracefully.
 
