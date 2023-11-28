@@ -53,7 +53,7 @@ The `ChangeChargeLimit` script reads the `config.json` file in the "ChangeCharge
 3. Run the script in administrator mode:
 
    ```bash
-   python main.py
+   python main.pyw
    ```
 
 ## Scheduling with Windows Task Scheduler
@@ -84,7 +84,7 @@ The `ChangeChargeLimit` script reads the `config.json` file in the "ChangeCharge
    - In the "Actions" tab:
      - Create a new action by clicking "New...".
      - In the "Program/script" field, provide the full path to the Python executable (e.g., `C:\Users\Admin\AppData\Local\Programs\Python\python.exe` or wherever you might have installed it).
-     - In the "Add arguments (optional)" field, set it to `main.py`.
+     - In the "Add arguments (optional)" field, set it to `main.pyw`.
      - In the "Start in (optional)" field, specify the path where your Git repository has been saved (for example, `C:\Users\Admin\git-projects\ChangeChargeLimit\`).
 
 6. **Settings Tab**:
@@ -105,7 +105,7 @@ The `ChangeChargeLimit` script reads the `config.json` file in the "ChangeCharge
 
 9. Run the task once manually by right clicking on the newly created task and then clicking on "Run". Then click "Refresh" in the "Actions" panel on the right hand side.
 
-With these configurations, the task will run the `main.py` script from your local Git repository every hour after a user logs on, ensuring that it has administrator privileges and handling task failures gracefully.
+With these configurations, the task will run the `main.pyw` script from your local Git repository every hour after a user logs on, ensuring that it has administrator privileges and handling task failures gracefully.
 
 Make sure to review and adjust these settings as needed based on your specific use case and requirements.
 
